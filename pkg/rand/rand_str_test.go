@@ -6,7 +6,7 @@ import (
 )
 
 func TestRandomStringWithLen(t *testing.T) {
-	str := RandomStringWithLen(11)
+	str := RandomStringWithLen(12)
 	if str == "" {
 		t.Fail()
 	}
@@ -15,7 +15,7 @@ func TestRandomStringWithLen(t *testing.T) {
 }
 
 func TestRandomStringWithPrefix(t *testing.T) {
-	str := RandomStringWithPrefix("veth-", 11)
+	str := RandomStringWithPrefix("hey-", 12)
 	if str == "" {
 		t.Fail()
 	}
